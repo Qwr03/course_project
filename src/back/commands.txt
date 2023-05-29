@@ -8,6 +8,8 @@ set FLASK_ENV=development
 flask run
 alembic revision --autogenerate 
 
+LOOK HERE ↓↓↓↓↓↓↓↓:
+
 /// basically to run everything, u will need only to commands (if everything is installed - only these 2):
 /// env\Scripts\activate.bat
 /// flask run
