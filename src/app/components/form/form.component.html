@@ -1,0 +1,49 @@
+<div class="col-md-12">
+  <div class="section-heading-block">
+    <h4 class="section-title text-light">
+      {{ tipsText[tipIndex] }} {{ tipIndex == 2 ? prediction : '' }}
+    </h4>
+  </div>
+  <div role="form" class="main-form wpcf7" id="wpcf7-f90-o1" lang="en-US" dir="ltr">
+    <div class="screen-reader-response" aria-live="polite"></div>
+    <form action="/contact-us/#wpcf7-f90-o1" method="post" class="main-form wpcf7-form" novalidate="novalidate">
+      <div class="message"><label> <br>
+          <textarea name="your-message" cols="50" rows="10" [(ngModel)]="review"
+            class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message">
+            </textarea>
+        </label>
+      </div>
+
+      <button (click)="doSomeMagic()" class="wpcf7-form-control wpcf7-submit text-light btn-block btn link-2">
+        <span>
+          {{ !!prediction && tipIndex == 2 ? 'Clear' : 'Send' }} 
+        </span>
+      </button>
+    </form>
+  </div>
+</div>
+
+    <div class="loader-container">
+      <div class='loader loader4' *ngIf="isLoading">
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      

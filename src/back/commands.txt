@@ -1,0 +1,13 @@
+pip show flask
+pip install -r requirements.txt.
+python -m venv env
+python -m pip install flask
+env\Scripts\activate.bat
+flask run
+set FLASK_ENV=development
+flask run
+alembic revision --autogenerate 
+
+/// basically to run everything, u will need only to commands (if everything is installed - only these 2):
+/// env\Scripts\activate.bat
+/// flask run
