@@ -41,11 +41,8 @@ export class FormComponent implements OnInit {
         (error) => {
           this.tipIndex = 3;
           console.error(error);
-          setTimeout(() => {
-            this.freezeStatus.emit(false);
-            this.isLoading = false;
-
-          }, 4000)
+          this.freezeStatus.emit(false);
+          this.isLoading = false;
         }
       );
     } else {
